@@ -1,0 +1,102 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+body{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(214, 214, 214);
+}
+
+.main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(54, 54, 54);
+  height: 20vh;
+  min-height: 100px;
+  width: 30vw;
+  min-width: 300px;
+  padding: 3% 4%;
+  border-radius: 5px;
+  box-shadow: 5px 7px 11px 1px rgb(248, 129, 129);
+}
+
+.cel, .fah{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  /* position: relative; */
+}
+
+select option{
+  background-color: black;
+  margin-left: 10%;
+  margin-bottom: 3%
+}
+
+h2{
+  color: black;
+  position: absolute;
+  top: 10vh;
+  text-shadow: 5px 7px 4px #F19393;
+}
+
+select{
+  font-size: 20px;
+  height: 40%;
+  /* background: gold; */
+  background: none;
+  border: none;
+  outline: none;
+  margin-left: 7%;
+  margin-bottom: 4%;
+}
+
+i{
+  margin-top: 7%;
+}
+
+input{
+  background-color: rgb(136, 136, 136);
+  height: 70%;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 25px;
+  width: 80%;
+  margin: 0 10%;
+  border-radius: 5px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .main{
+    /* background-color: black; */
+    width: 60vw;
+    height: 15vh;
+    padding: 2vh 5vw;
+  }
+  select{
+    height: 30px;
+  }
+  input{
+    height: 50%;
+  }
+}
+
+
+
